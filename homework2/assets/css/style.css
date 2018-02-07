@@ -1,0 +1,50 @@
+
+
+
+/*couldn't get image to appropriate size*/
+#ireland {
+  width: 200px;
+  height: auto;
+}
+/*same*/
+.link {
+  width: 50px;
+  height: 50px;
+}
+/*don't think bootstrap has the right colors scheme*/
+.body {
+  background-color: rgba(219, 213, 213, 0.908);
+}
+/*needed the background color to show up between columns and under the content of the "sidebar"*/
+.padding{
+  width: 100%;
+  padding: 0px, 15px, 40px, 15px;
+}
+.work {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  border-bottom: 0;
+}
+/*couldn't find a way to adjust font size this small in bootstrap*/
+.footer {
+  font-size: 12px;
+}
+
