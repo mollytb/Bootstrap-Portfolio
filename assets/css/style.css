@@ -18,7 +18,7 @@
 /*needed the background color to show up between columns and under the content of the "sidebar"*/
 .padding{
   width: 100%;
-  padding: 0px, 15px, 40px, 15px;
+  padding: 5px, 15px, 40px, 15px;
 }
 .work {
   position: relative;
