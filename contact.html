@@ -4,88 +4,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-  <title>Contact | Your Name</title>
- 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+  <!-- My style sheet -->
+  <link rel="stylesheet"  href="assets/css/styles.css" media="screen">>
+
+  <title>Contact | Molly</title>
+
 </head>
 
-<body class="body">
-    <div class="container">
-      <header>
-        <nav class="navbar fixed-top container-fluid bg-white">
-          <a class="button btn-lg bg-info text-white">Molly Burns</a>
-          <div class="btn-group" role="group">
-            <a class="btn btn-outline-secondary" href="index.html">About</a>
-            <a class="btn btn-outline-secondary" href="portfolio.html">Portfolio</a>
-            <a class="btn btn-outline-secondary" href="contact.html">Contact</a>
-          </div>
-        </nav>
-      </header>
-      <hr>
-      <hr>
-      <hr>
+<body>
+<!-- Start NavBar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid navbar-custom">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" id="logo">Molly Burns</a>
       </div>
-      <div class="container">
 
-      <div class="row">
-          <div class="col-xs-12 col-lg-8 bg-white float-left">
-            <section>
-              <h1 class="text-info">Contact</h1>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right navbar-right-custom">
+          <li><a href="contact.html">Contact</a></li><span class="pipe"></span>
+          <li><a href="portfolio.html">Portfolio</a></li><span class="pipe"></span>
+          <li><a href="index.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End NavBar -->
 
-              <form>
-                <div class="form-group">
-                  <ul>
-                    <li class="row">
-                      <label class="col-12" for="name">Name</label>
-                      <input class="col-9 offset-1 float-right" type="text" id="name" name="name" placeholder="John Smith" required="required">
-                    </li>
-                    <li class="row">
-                      <label class="col-12" for="email">Email</label>
-                      <input class="col-9 offset-1 float-right" type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-                    </li>
-                    <li class="row">
-                      <label class="col-12" for="message">Message</label>
-                      <textarea class="col-9 offset-1 float-right" name="message" required="required"></textarea>
-                    </li>
-                  </ul>
-                <input class="bg-info text-white"type="submit">
+ <!-- Start of content wrap -->
+ <div class="wrap">
+    <div class="container">
+      <section class="row">
+        <div class="col-md-8">
+          <form class="contact-form">
+            <h1 class="contact-form-header">Contact</h1>
+            <hr class="contact-hr"/>
+            <div class="form-group">
+              <label class="label-name" for="name">Name</label>
+              <input type="text" id="name_input" name="user_name" />
+            </div>
+            <div class="form-group">
+              <label class="label-mail" for="mail">E-mail</label>
+              <input type="email" id="mail_input" name="user_mail" />
+            </div>
+            <div class="form-group">
+              <label class="label-msg" for="msg">Message</label><br />
+              <textarea id="msg" name="user_message_input" cols=600></textarea>
+            </div>
+            <button class="submit-btn">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-4">
+
+          <!-- Start of Connect With Me Area -->
+          <section id="connect-with-me-area">
+            <div class="connect-with-me-content">
+              <h1 class="connect-with-me-header">Connect With Me</h1>
+              <hr />
+              <div id="images">
+                <a href="https://github.com/mollytb"><img src="assets/imgs/github.png" alt="" class="connect-with-me-photo"></a>
+                <a href="https://www.linkedin.com/in/molly-t-burns"><img src="assets/imgs/linkedin.png" alt="" class="connect-with-me-photo"></a>
+                <a href="https://meta.stackoverflow.com/users/9242731/molly-b"><img src="assets/imgs/stackover2.png" alt="" class="connect-with-me-photo"></a>
               </div>
-               </form>
+            </div>
+          </section>
 
-            </section>
-          </div>
-
-          <div class="col-xs-12 col-md-4">
-            <section class="bg-white padding">
-              <br>
-              <h3 class="text-info">Connect with Me</h3>
-              <hr>
-              <div class="text-center mx-auto">
-                <a href="https://github.com/mollytb"><img src="assets/images/github-128.png" class="link" alt="GitHub" /></a>
-                <a href="www.linkedin.com/in/molly-t-burns"><img src="assets/images/linkedin-128.png" class="link" alt="LinkedIn" /></a>
-                <a href="https://meta.stackoverflow.com/users/9242731/molly-b"><img src="assets/images/stackoverflow-128.png" class="link" alt="Stack Overflow" /></a>    
-              <br>
-              <br>
-              </div>
-            </section>
-      </div> 
+          <!-- End of the Connect With Me Area -->
+        </div>
+      </section>
+    </div>
   </div>
-  <div class="clearfix">
-      <div class="bg-info fixed-bottom"><br><br><br></div>
-      <footer class="col text-center fixed-bottom container-fluid bg-secondary border-top border-info footer">
-        <br>
-        Copyright &copy; 2017 Molly Burns
-        <br>
-        <br>
-      </footer>
+  <!-- End of content wrap -->
+ <!-- Start of footer -->
+ <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright 2017 Molly Burns
+    </p>
+  </footer>
+  <!-- End of footer -->
 
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
 </body>
 
