@@ -301,6 +301,7 @@ html {
   width: 233px;
   height: 166px;
   margin-right: 15px;
+  
 
   /* Positioning */
   margin-bottom: 15px;
@@ -314,6 +315,7 @@ html {
   /* Box-model */
   width: 274px;
   margin: 20px 0 25px;
+  padding: 0 5px 0 5px;
   overflow: auto;
 }
 
@@ -332,17 +334,17 @@ html {
   opacity: 0.8;
 }
 
-.work h3 {
+.work h4 {
   /* Positioning */
   position: absolute;
   bottom: 15px;
-  width: 100%;
+  width: 97%;
 
   /* Box-model */
-  padding: 15px;
+  padding: 15px 5px;
   margin-bottom: 0;
-  font-weight: 300;
-  line-height: 20px;
+  font-weight: 250;
+  line-height: 1px;
 
   /* Typography */
 
