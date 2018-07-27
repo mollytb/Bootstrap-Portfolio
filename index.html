@@ -15,61 +15,67 @@
   <title>About | Molly Burns</title>
 </head>
 
-<body class="body">
-  <div class="container padding">
-    <header>
-      <nav class="navbar fixed-top container-fluid bg-white">
-        <a class="button btn-lg bg-info text-white">Molly Burns</a>
-        <div class="btn-group" role="group">
-          <a class="btn btn-outline-secondary" href="index.html">About</a>
-          <a class="btn btn-outline-secondary" href="portfolio.html">Portfolio</a>
-          <a class="btn btn-outline-secondary" href="contact.html">Contact</a>
-      </div>
-      </nav>
-    </header>
-    <hr>
-    <hr>
-    <hr>
-  </div>
-  <div class="container padding">
+<body>
+<!-- Start NavBar -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid navbar-custom">
 
-    <div class="row">
-      <div class="ccol-xs-12 col-lg-8 bg-white float-left">
-        <section>
-          <h1 class="text-info">About Me</h1>
-          <hr>
-
-            <img src="assets/images/Ireland.jpg" class="img-fluid img-thumbnail float-left" id="ireland" alt="Molly Burns">
-
-          <p>Molly was born in Sandusky Ohio in 1983.</p>
-          <p>Molly does all kinds of cool things all the time.</p>
-          <p>With 6 siblings she has learned to talk fast and eat quicker.</p>
-          <p>Molly has a twin sister named Katy.</p>
-          <p>Sometimes I go to the park and make up things to type into my code.</p>
-          <p>That way I can figure out what's not working.</p>
-          <p>All the leaves are brown, and the sky is grey.</p>
-
-        </section>
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" id="logo">Molly Burns</a>
       </div>
 
-      <div class="col-xs-12 col-md-4">
-        <section class="bg-white padding">
-          <br>
-          <h3 class="text-info">Connect with Me</h3>
-          <hr>
-          <div class="text-center mx-auto">
-            <a href="https://github.com/mollytb"><img src="assets/images/github-128.png" class="link" alt="GitHub" /></a>
-            <a href="www.linkedin.com/in/molly-t-burns"><img src="assets/images/linkedin-128.png" class="link" alt="LinkedIn" /></a>
-            <a href="https://meta.stackoverflow.com/users/9242731/molly-b"><img src="assets/images/stackoverflow-128.png" class="link" alt="Stack Overflow" /></a>    
-          <br>
-        <br>
-        </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right navbar-right-custom">
+          <li><a href="contact.html">Contact</a></li><span class="pipe"></span>
+          <li><a href="portfolio.html">Portfolio</a></li><span class="pipe"></span>
+          <li><a href="index.html">About</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid-->
+  </nav>
+  <!-- End NavBar -->
+     <!-- Start of content wrap -->
+     <div class="wrap">
+        <div class="container">
+          <section class="row">
+            <div class="col-md-8">
+              <article class="about-me-content">
+                <h1 class="about-me-header">About Me</h1>
+                <hr class="about-me-hr"/>
+            <img src="assets/imgs/Ireland.jpg" class="img-fluid img-thumbnail float-left" id="ireland" alt="Molly Burns">
+
+          <p>Hi! My name is Molly Burns and I’m a full-stack developer. I love doing puzzles and solving mysteries and have found web design and development to be a great way to combine these talents to create new things. Working with others to create something or deconstructing a program to find the bug are both very rewarding and challenging.
+              I’m a full stack developer who would like to work with innovative tech companies to create and adapt the newest technologies to better serve people. I know that technology is one of the best ways to bring people together and to solve some of the world and individual’s most pressing problems.</p>
+        </article>
+      </div>
+       
+      </div>
+
+      <div class="col-md-5">
+          <!-- Start of Connect With Me Area -->
+          <section id="connect-with-me-area">
+              <div class="connect-with-me-content">
+                <h1 class="connect-with-me-header">Connect With Me</h1>
+                <hr />
+                <div id="images">
+                  <a href="https://github.com/mollytb"><img src="assets/imgs/github.png" alt="" class="connect-with-me-photo"></a>
+                  <a href="https://www.linkedin.com/in/molly-t-burns"><img src="assets/imgs/linkedin.png" alt="" class="connect-with-me-photo"></a>
+                  <a href="https://meta.stackoverflow.com/users/9242731/molly-b"><img src="assets/imgs/stackover2.png" alt="" class="connect-with-me-photo"></a>
+                </div>
+              </div>
+            </section>
+  
+            <!-- End of the Connect With Me Area -->
+          </div>
         </section>
-      </div> 
+      </div>
     </div>
-  </div>
-
-  </div>
 <!-- Start of footer -->
 <footer class="footer">
   <div class="two-toned-footer-color"></div>
